@@ -23,3 +23,7 @@ class GetUserSchema(UserSchema):
 
     class config:
         orm_mode = True
+
+class UserLoginSchema(BaseModel):
+    email: str
+    password: str
